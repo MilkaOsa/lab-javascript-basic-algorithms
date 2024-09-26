@@ -51,6 +51,17 @@ if (hacker1 < hacker2) {
     console.log("What?! You both have the same name?");
   }
   
-  
+// Bonus 1: Lorem Ipsum Text
+
+let longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+
+// Count the number of words
+let wordCount = longText.split(' ').length;
+console.log(`The number of words in the text is: ${wordCount}`);
+
+// Count the occurrences of 'et' - Hasta aqui he llegado!
+
 
 
