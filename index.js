@@ -61,7 +61,82 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 let wordCount = longText.split(' ').length;
 console.log(`The number of words in the text is: ${wordCount}`);
 
-// Count the occurrences of 'et' - Hasta aqui he llegado!
+// Count occurrences of the word 'et'
+const etCount = longText.split(' et ').length - 1;
+console.log(`Number of occurrences of 'et': ${etCount}`);
+
+// Bonus 2: Palondromo
+
+const isPalindrome = (phrase) => {
+  // Normalize the string: remove punctuation, make lowercase
+  let normalized = '';
+  for (let char of phrase) {
+      if (char.toLowerCase() !== char.toUpperCase()) { // Check if it's a letter
+          normalized += char.toLowerCase();
+      }
+  }
+  
+  // Check palindrome using a loop
+  let start = 0;
+  let end = normalized.length - 1;
+  while (start < end) {
+      if (normalized[start] !== normalized[end]) {
+          return false; // Not a palindrome
+      }
+      start++;
+      end--;
+  }
+  return true; // It's a palindrome
+};
+
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+console.log(isPalindrome(phraseToCheck)); // true
+
+
+//palindrome checker
+
+class PalindromeChecker {
+  constructor(stringToCheck) {
+    this.stringToCheck = stringToCheck;
+  }
+  check() {
+    let reverse = "";
+
+    for (let i = this.stringToCheck.length - 1; i >= 0; i--) {
+      const char = this.stringToCheck[i];
+      reverse += char;
+    }
+    return this.stringToCheck === reverse;
+  }
+
+  clean(str) {
+    let result = "";
+
+    for (let i=0; i < str.length; i++) {
+      cont char = str[i].toLowerCase();
+
+      if (char !== "."; && char !== " " && char !== "!" && char "?")
+    }
+  }
+}
+
+const checker = new PalindromeChecker ("amor a roma")
+
+const result = checker.check();
 
 
 
+// otro aproach
+
+function isPalindrome(str) {
+  let right = ''
+   for (let i = 0; i >= 0; i++) {
+    const char = str[i].toLowerCase();
+
+    if (char< "a")
+   }
+
+
+  let left =
+  }
+}
